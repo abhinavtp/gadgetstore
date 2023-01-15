@@ -1,0 +1,62 @@
+{% extends 'admin_panel/adminpage.html' %}
+
+
+{% block content %}
+<h1>heyyyy</h1>
+
+<form action="" method="post">
+<table>
+    <tr>
+        <td>
+<input type="text" name="" id="">
+       </td>
+       <td>
+<button type="button" class="btn btn-outline-success" > update </button>
+</td>
+    </tr>
+    <tr>
+        <td>
+<input type="text" name="" id="">
+</td>
+<td>
+<button type="button" class="btn btn-outline-success" > delete </button>
+</td>
+</tr>
+</table>
+
+</form>
+<br>
+{% for i in data %}
+<div class="card" style="width: 18rem; float: left; margin-left: 10px; margin-top: 20px;" >
+    <img class="card-img-top" src="{{i.img.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{i.model}}</h5>
+      <p class="card-text">{{i.description}}</p>
+      <br>
+      <p class="card-text">{{i.price}}</p>
+      <a href="delete_product/{{i.id}}"><button class="btn btn-danger">Delete</button></a>
+    </div>
+  </div>
+  {% endfor %}
+  
+
+<br><br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

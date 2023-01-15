@@ -1,0 +1,85 @@
+{% extends 'customer/new.html' %}
+{% load static %}
+
+
+
+
+
+
+ 
+
+{% block content %}
+<br><br>
+<br><br>
+<a href="home"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="50" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16" style="margin-left: 30px;color: black;">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+</svg></a>
+<h1 align="center">iPad</h1>
+
+<br><br>
+<!-- {% for i in data %}
+<div class="card" style="width: 18rem; float: left; margin-left: 10px; margin-top: 20px;" >
+    <img class="card-img-top" src="https://www.refurbished.store/cache/images/iphone-x-zilver-0_600x600_BGresize_16777215-tj.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{i.model}}</h5>
+      <p class="card-text">{{i.description}}</p>
+      <br>
+      <p class="card-text">{{i.price}}</p>
+      <a href="#" class="btn btn-primary">Update</a>
+    </div>
+  </div>
+  {% endfor %} -->
+
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for i in data %}
+    {% csrf_token %}
+    <div class="col">
+      <div class="card  card_products">
+        <img src="{{i.img.url}}" class="card-img-top  card_image" alt="...">
+        <div class="card-body  card_discription">
+          <h5 class="card-title">{{i.model}}</h5>
+          <p class="card-text">{{i.description}}</p>
+          <p class="card-text">{{i.price}}</p><br>
+
+          <button class="btn btn-primary" onclick="add_to_cart('{{i.id}}')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    
+  </div>
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <link rel="stylesheet" href="{% static 'css/card.css' %}">
+
+
+{% endblock %}

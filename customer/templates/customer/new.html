@@ -1,0 +1,315 @@
+
+{% load static %}
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/customer.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'js/main2.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="navfirst">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top  ">
+
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#">GADGET STORE <img src="{% static 'images/applenew.PNG' %}" style="width: 20px;"
+              alt=""></a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item"> -->
+
+              <!-- </li> -->
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  iphone
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">iphone 13 pro max</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 13 pro</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 13</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 13 mini</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">iphone 12 pro max</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 12 pro</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 12 </a></li>
+                  <li><a class="dropdown-item" href="#">iphone 11pro max</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 11 pro</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 11 </a></li>
+                  <li><a class="dropdown-item" href="#">iphone xs</a></li>
+                  <li><a class="dropdown-item" href="#">iphone x</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 8 plus</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 8</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 7 plus </a></li>
+                  <li><a class="dropdown-item" href="#">iphone 7</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 6s plus</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 6s</a></li>
+                  <li><a class="dropdown-item" href="#">iphone 6</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ipad
+                </a>
+                <ul class="dropdown-menu  ">
+                  <li><a class="dropdown-item" href="#">ipad pro</a></li>
+                  <li><a class="dropdown-item" href="#">ipad mini</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">ipad air</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  airpods
+                </a>
+                <ul class="dropdown-menu  ">
+                  <li><a class="dropdown-item" href="#">airpods pro</a></li>
+                  <li><a class="dropdown-item" href="#">....</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">.... </a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  watch
+                </a>
+                <ul class="dropdown-menu  ">
+                  <li><a class="dropdown-item" href="#">Apple watch series 7</a></li>
+                  <li><a class="dropdown-item" href="#">Apple watch series 6</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">Apple watch series 5</a></li>
+                  <li><a class="dropdown-item" href="#">Apple watch series SE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  mac
+                </a>
+                <ul class="dropdown-menu  ">
+                  <li><a class="dropdown-item" href="#">mac book pro 13</a></li>
+                  <li><a class="dropdown-item" href="#">mac book m2</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">mac book m1</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  accessories
+                </a>
+                <ul class="dropdown-menu  ">
+                  <!-- <li><a class="dropdown-item" href="#">Apple watch series 7</a></li> -->
+
+                  <select name="" id="" style="width: 200px;">
+                    <option selected disabled>options..</option>
+                    <option value="">cable</option>
+                    <option value="">adapter</option>
+
+
+                  </select>
+
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li> -->
+            </ul>
+            <a href="my_or"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-card-checklist" viewBox="0 0 16 16" style="margin-right: 30px;">
+              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+              <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            </svg></a>
+            <a href="cart"><img src="{% static 'images/download.png' %}" width="40px" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  {% block content %}
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="{% static 'images/gadget01.PNG'%} " class="d-block w-100" alt="NO IMAGES">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/gadget2.PNG'%} " class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/gadget0.PNG'%} " class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" >
+            <img src="{% static 'images/iphone.PNG' %}" style="width: 400px; " class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/ipad.PNG' %}" style="width: 400px; "  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{%  static 'images/watch.PNG' %}" style="width: 400px;"  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{%  static 'images/mac.PNG' %}" style="width: 400px;"  class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+  <!-- <h1>Flickity - wrapAround</h1> -->
+
+  <!-- Flickity HTML init -->
+
+  
+  <div class="slide2">
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell"> <a href="{% url 'loggedin_iphone_products' %}"><img src="{% static 'images/iphone.PNG' %}" class="im"></a>&nbsp;&nbsp;</div>
+      <div class="carousel-cell"><a href="{% url 'loggedin_ipad_products' %}"><img src="{% static 'images/ipad.PNG' %}" class="im"></a>&nbsp;&nbsp;</div>
+      <div class="carousel-cell"><a href="{% url 'loggedin_watch_products' %}"><img src="{%  static 'images/watch.PNG' %}" class="im"></a>&nbsp;&nbsp;</div>
+      <div class="carousel-cell"><a href="{% url 'loggedin_mac_products' %}"> <img src="{%  static 'images/mac.PNG' %}" class="im"></a>&nbsp;&nbsp;</div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  {% endblock  %}
+
+  
+
+  <div class="last">
+    <div class="black0">
+      <a href="">
+        <h3>OTHERS</h3>
+      </a>
+      <a href="#">
+        <p>EMI & Policy </p>
+      </a>
+      <a href="#">
+        <p>Location </p>
+      </a>
+      <a href="#">
+        <p>Terms and Conditions </p>
+      </a>
+      <a href="#">
+        <p>Shiping & Delivery policy </p>
+      </a>
+      <a href="#"></a>
+
+    </div>
+
+    <div class="contacts">
+      <h3> <b>
+          <p> CONTACT </p>
+        </b></h3> <br>
+      <p> 984598599 </p>
+      <p> GadgetStore@gamil.com </p> <br>
+    </div>
+
+
+    <div id="icon">
+
+
+      <a href="#" class="fa  fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="" class="fa fa-instagram "></a>
+      <br><br><br><br>
+      <a href="logout"><button  class="btn btn-outline-success" type="button" style="margin-left:60px ;">logout</button></a>
+
+     
+
+      
+
+    </div>
+    <div id="logout">
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+
+.navfirst{
+    width: 200px;
+
+}
+
+
+.slide2 {
+     padding-left: 100px;
+     padding-right: 100px
+
+}
+
+
+.im{
+    width: 400px;
+}
+    
+
+
+.d-block{
+    height: 400px;
+}
+
+
+
+    
+.container-fluid{
+    background-color: black;
+
+}    
+
+
+#carouselExampleIndicators{
+    padding-top: 50px;
+
+}
+
+
+
+.last{
+    width: 100%;
+    background-color: black;
+    margin-top: 200px;
+    height: 300px;
+    background-color: black;
+    color: white;
+     border: 6px solid rgba(85, 88, 84, 0.733); 
+    padding-top: 30px;
+
+}
+
+
+.black0{ 
+    margin-left: 30px;   
+    width: 400px;
+    height: 200px;
+    float: left;
+    
+
+}
+
+
+.black0 a{
+    
+     color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+
+}
+
+.contacts{
+    color: white;    
+    float: left;
+    width: 200px;
+    height: 200px; 
+    background-color: black;
+}
+
+#icon{
+    
+    margin-top: 50px;
+    margin-right: 20px;
+
+    float: right;
+    color: white;
+    width: 200px;
+}
+
+
+.fa {
+
+    padding: 20px;
+    text-align: center;
+    width: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+
+
+    }
+
+    .fa:hover{
+        opacity: 0.7;
+    }
+
+ .fa-facebook{
+
+/* background: #3B5998; */
+color: white;
+
+ }
+
+
+ .fa-twitter {
+    /* background: #55ACEE; */
+    color: white;
+   
+}
+
+
+
+
+.fa-instagram{
+    /* background: #3B5998; */
+    color: white;
+    margin-left: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width:800px) {
+
+
+    .navbar{
+        width: auto;
+    }
+
+
+    .navfirst{
+        width: 200px;
+        height: 50px;
+    
+}
+
+
+
+    .slide2 {           
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%
+   
+   }
+
+
+    .im{
+        width:200px;
+        height: 200px;
+    }
+
+
+
+    .d-block{
+        height: 200px;
+    }
+    
+
+
+    #carouselExampleIndicators{
+        padding-top: 0%;
+
+
+    }
+
+    .black0{   
+        width: 110px;
+        text-align: left;
+        
+        }
+
+
+    .lack0 a{
+        text-align: left;
+        color: white; 
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       text-decoration: none;
+   
+   }
+
+    .contacts{
+        
+        background-color: black;
+        width: 10px;
+        margin-left: 20px;
+        left: 0%;   
+        float: left;
+        margin-right: 100px;
+        } 
+    
+    .fa-facebook{
+        /* background: #3B5998; */
+        color: white;
+        
+         }
+         .fa-twitter {
+            /* background: #55ACEE; */
+            color: white;
+           
+        }
+        .fa-instagram{
+            /* background: #3B5998; */
+            color: white;
+        
+        
+        
+        }
+        #icon{
+
+            color: white;
+            width: 200px;
+            float: right;
+            margin-right: 100px;
+            margin-top: 100px;
+            padding-left: 20px;
+        
+    
+    
+    
+        }
+
+
+        .last{
+            width: 100%;
+            height: 800px;
+            background-color: black;
+            border: 6px solid rgba(85, 88, 84, 0.733); 
+    
+        }
+
+        #logout{
+            color: white;
+            width: 200px;
+            float: right;
+            margin-right: 100px;
+            margin-top: 100px;
+            padding-left: 20px;
+          
+
+       
+        }
+    
+
+ }
+
+
+
+
+
+
+

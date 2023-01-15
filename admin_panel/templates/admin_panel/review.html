@@ -1,0 +1,59 @@
+{% extends 'admin_panel/adminpage.html' %}
+{% block content %}
+
+
+<h3 class="bookingHeading">Orders</h3>
+
+
+
+<br><br><br>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">OrderId</th>
+        <th scope="col">Product</th>
+        <th scope="col">Customer</th>
+        <th scope="col">Address</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in data %}
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.product.model}}</td>
+        <td>{{i.user.name}}</td>
+        <td>{{i.user.address}}</td>
+        <td>{{i.status}}</td>
+        <td><a href="delete_feedback/{{i.id}}"><button type="BUtton" class="btn btn-danger btn-sm btnsz cb"><span class="cbk">Delete</span></button></a></td>
+      </tr>
+      {% endfor %}
+      </table>
+
+  <div class="bbbt">
+    <button type="button" class="btn btn-primary" onclick="history.back()">Back to Home</button>
+  </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+{% endblock %}

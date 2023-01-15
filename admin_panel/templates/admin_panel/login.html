@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+</head>
+<body>
+    <body>
+        <nav><a href="#" class="focus">Log In</a></nav>
+           <form method="POST">
+
+            <h2>Admin Login</h2>
+
+            {% csrf_token %}
+
+            <input type="text" name="username" class="text-field" placeholder="Username" />
+            <input type="password" name="password" class="text-field" placeholder="Password" />
+
+            <a href=""><input type="submit" class="button" value="LogIn" /></a>
+
+        </form>
+
+    </body>
+</body>
+
+</html>

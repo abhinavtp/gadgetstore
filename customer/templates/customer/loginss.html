@@ -1,0 +1,52 @@
+{% extends 'customer/file.html' %}
+{% load static %}
+
+
+{% block content %}
+ 
+
+
+
+  <div class="log1">
+    <div class="logpage">
+
+      <form method="POST"  onsubmit="return verifyPassword()">
+        {% csrf_token %}
+        <div class="mb-3">
+          <div class="login">
+            <h1>LOGIN <img src="{% static 'images/applelog.PNG' %}" alt="" class="imgapple"> ..!</h1>
+          </div>
+          <label for="exampleInputEmail1" class="form-label" style="color:white ;">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+          <span id="emails" style="color:red"></span>
+
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label" style="color:white;">Password</label>
+          <input type="password" class="form-control" id="password" name="psw">
+          <span id="message" style="color:red"></span>
+          <span id="lo1"></span>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="showPassword">
+          <label class="form-check-label" for="showPassword" style="color: white;">show password</label>
+        </div>
+        <button type="submit" class="btn btn-outline-success"> Submit</button>
+        <button type="reset" class="btn btn-outline-success" value="Reset">Reset</button>
+      </form>
+      <p style="color: red;">{{status}}</p>
+    </div>
+  </div>
+
+
+
+  <link rel="stylesheet" href="{% static 'css/log.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> 
+ 
+
+  <link rel="stylesheet" href="{% static 'css/loginx.css' %}"> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="{% static 'js/log.js' %}"></script>
+
+{% endblock %}

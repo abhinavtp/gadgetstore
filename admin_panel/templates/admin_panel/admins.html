@@ -1,0 +1,101 @@
+{% extends 'admin_panel/adminpage.html' %}
+{% block content %}
+<h1>Add Product</h1>
+<br><br>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<table style="border: 0;">
+    <tr>
+        <th>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Brand</label>
+        </td>
+        <td>
+            <input type="text" name="brand" id="" class="form-control" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Model</label>
+        </td>
+        <td>
+            <input type="text" name="model" id="model" class="form-control" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Price</label>
+        </td>
+        <td>
+            <input type="number" name="price" id="" class="form-control"  required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Description</label>
+        </td>
+        <td><textarea name="description" id="" cols="19" rows="4" class="form-control"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Quantity</label>
+        </td>
+        <td>
+            <input type="number" name="quantity" id="" class="form-control" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="">Category</label>
+        </td>
+        <td><select name="category" id="" class="form-control">
+            <option selected disabled>Select</option>
+            <option>Mac</option>
+            <option>iPhone</option>
+            <option>iPad</option>
+            <option>Watch</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td><input class="form-control" type="file" name="prd_img" id="prd_img"></td>
+    </tr>
+</table>
+<br>
+<button class="btn btn-secondary" type="submit">Add</button>
+</form>
+<!-- <label for="">brand</label>
+<input type="text" name="" id="">
+<button type="button" class="btn btn-outline-success" > add</button>
+<label for="">product name</label>
+<input type="text" name="" id="">
+<button type="button" class="btn btn-outline-success" > add</button>
+<label for="">dfgh</label>
+<input type="text" name="" id="">
+<button type="button" class="btn btn-outline-success" > update</button> -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+{% endblock %}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'has/file.html' %}
+{% load static %}
+
+
+{% block content %}
+ 
+
+
+
+  <div class="log1">
+    <div class="logpage">
+
+      <form method="POST" onsubmit="return verifyPassword()">
+        {% csrf_token %}
+        <div class="mb-3">
+          <div class="login">
+            <h1>SIGN UP <img src="{% static 'images/applelog.PNG' %}" alt="" class="imgapple"> ..!</h1>
+          </div>
+          <label for="exampleUsername1" class="form-label" style="color:white ;">Username</label>
+          <input type="text" class="form-control" id="exampleUsername1" aria-describedby="emailHelp" name="email">
+          <span id="emails" style="color:red"></span>
+
+          <label for="exampleInputEmail1" class="form-label" style="color:white ;">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+          <span id="emails" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label" style="color:white;">Password</label>
+          <input type="password" class="form-control" id="password" name="psw">
+          <span id="message" style="color:red"></span>
+          <span id="lo1"></span>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="showPassword">
+            <label class="form-check-label" for="showPassword" style="color: white;">show password</label>
+          </div>
+          <label for="repeatpassword" class="form-label" style="color:white;">Password</label>
+          <input type="password" class="form-control" id="repeatpassword" name="psw2">
+          <span id="message" style="color:red"></span>
+          <span id="lo1"></span>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="showPassword">
+          <label class="form-check-label" for="showPassword" style="color: white;">show password</label>
+        </div>
+        <button type="submit" class="btn btn-outline-success"> Submit</button>
+        <button type="reset" class="btn btn-outline-success" value="Reset">Reset</button>
+      </form>
+      <p style="color: red;">{{status}}</p>
+    </div>
+  </div>
+
+
+
+  <link rel="stylesheet" href="{% static 'css/log.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> 
+ 
+
+  <link rel="stylesheet" href="{% static 'css/loginx.css' %}"> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="{% static 'js/log.js' %}"></script>
+
+{% endblock %}
+</body>
+</html>
+
+
+<div class="main" style="margin-left: 450px;">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form method="POST" class="register-form" id="register-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" / required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" / required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="pass" id="pass" placeholder="Password" / required>
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                statements in <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image" style="margin-left: 300px;">
+                    <figure><img src="{% static 'images/signup-image.jpg' %}" alt="sing up image"></figure>
+                    <a href="{% url 'logins:log' %}" class="signup-image-link">I am already member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
