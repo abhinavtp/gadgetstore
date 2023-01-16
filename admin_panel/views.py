@@ -41,12 +41,13 @@ def login(request):
         upass = request.POST['password']
 
         try:
-            admin_login = admin.objects.get(username = uname , userpass = upass)
-            request.session['admin_id'] = admin_login.id
+            if uname=='abhinav' and upass=='1234':
+                request.session['admin_id'] = 1
 
-            return redirect('admmin:adminpage')
-        except:
-            msg = 'invalid'
+                return redirect('adminpage')
+        except Exception as e:
+            print(e)
+            msg = 'invalid  credentials'
 
 
     return render (request,'admin_panel/login.html',{'error':msg})
